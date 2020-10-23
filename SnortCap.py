@@ -35,7 +35,6 @@ def create_file():
 #https://stackoverflow.com/questions/47742405/using-snort-suricata-i-want-to-generate-an-ssh-alert-for-every-failed-login-to
         f.write(B + '\nSSH BRUTE FORCE ATTEMPT - EXTERNAL TO INTERNAL\n')
         f.write(W + '[ 3 ] This is a possible SSH brute force attempt captured 5 times within 30 second from the external network to the internal network. You can find more information at' + B + ' https://stackoverflow.com/questions/47742405/using-snort-suricata-i-want-to-generate-an-ssh-alert-for-every-failed-login-to' + G + '\n\nalert tcp $EXTERNAL_NET any -> $HOME_NET 22 (msg:"Possible SSH brute forcing!"; flags: S+; threshold: type both, track by_src, count 5, seconds 30; sid:10000001; rev: 1;)\n\n' + R + '----------' + '\n')
-
 #https://wiki.apnictraining.net/_media/sectutorial/05-2_ids_lab_answer.rtf
         f.write(B + '\nSSH BRUTE FORCE ATTACK - THRESHOLD\n')
         f.write(W + '[ 4 ] A rule to check SSH brute force attack and log IP trying to connect more than 3 times in 60 seconds. You can find more information at ' + B + 'https://wiki.apnictraining.net/_media/sectutorial/05-2_ids_lab_answer.rtf\n\n' + G + 'alert tcp any any -> $HOME_NET 22 (msg:"Potential SSH Brute Force Attack"; flow:to_server; flags:S; threshold:type threshold, track by_src, count 3, seconds 60; classtype:attempted-dos; sid:4; rev:1; resp:rst_all;)\n\n' + R + '----------' + '\n')
