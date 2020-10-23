@@ -22,4 +22,4 @@ SSH enables remote, encrypted access to any system running an SSH server. It req
 If you do not have a PCAP file with SSH Brute Force attempts in it, you can check Jon Siwek's github at https://github.com/jsiwekSide. There you will find a PCAP file you can use: 
 https://github.com/bro/bro/raw/master/testing/btest/Traces/ssh/sshguess.pcap (use wget)
 
-Note: This is considered version 1.0. When working on this script I had a week to complete it and learned more than I did to begin with. You will see more refined versions of this script in the future
+Note: This is considered version 1.0 of SnortCap. When working on this script I had a week to complete it and learned more than I did to begin with. You will see more refined versions of this script in the future
