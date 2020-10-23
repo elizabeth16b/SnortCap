@@ -65,16 +65,18 @@ def sshbf_detect():
                 except:
                     pass
 
-    if flag == False:
-         print (O + "\n\t\t\t\t\t||| SNORTCAP v1.0 |||")
-         print (W + "\n This script parses a PCAP file and outputs useable Snort rule(s) based on the traffic captured")
-         print (G + "\n\t\t\t\t\t    REQUIREMENTS:")
-         print (W + "\t\t\t\t\t   -Python 3")
-         print (W + "\t\t\t\t\t   -Snort") 
-         print (W + "\t\t\t\t\t   -PCAP file")
+    if flag == False: 
+         print (O + "\n\t\t\t\t||| SNORTCAP v1.0 |||")
+         print (W + '\nNo failed SSH BRUTE FORCE ATTEMPTS' + P + ' were detected in this PCAP file.\n')
 
-         print (R + "\n\t\t\t\t\t\tUSAGE:")
-         print (W + "\t\t\t\t SnortCap.py <pcap>")
+         print (B + "\n This script parses a PCAP file and outputs useable Snort rule(s) based on the traffic captured")
+         print (O + "\n\t\t\t\t    REQUIREMENTS:")
+         print (P + "\t\t\t         -Python 3")
+         print (B + "\t\t\t         -Snort") 
+         print (P + "\t\t\t         -PCAP file")
+
+         print (O + "\n\t\t\t\t    USAGE:")
+         print (B + "\t\t\t\t SnortCap.py <pcap>")
 
 sshbf_detect()
 
