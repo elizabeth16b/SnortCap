@@ -1,5 +1,5 @@
 # Snort-Rule-Generator
-Generate Snort rules based on the network traffic captured. The script will go through a pcap file and determine whether there any failed SSH Brute Force attempts. If the script determines that there is failed SSH Brute Force attempts, it will proceed to generate a new file in the /etc/snort/rules/ directory with suggested Snort rules pertaining to the traffic it detected. 
+Generate Snort rules based on the network traffic captured. The script will go through a pcap file and determine whether there any failed SSH Brute Force attempts. If the script determines that there are, it will proceed to generate a new file in the /etc/snort/rules/ directory with suggested Snort rules pertaining to the traffic it detected. 
 
 ## Purpose
 The purpose of this script is to add value to the cybersecurity team. The amount of time this scipt can save to find potential failed SSH Brute Force attampts in the network will not only increase the chances of adversary events like these going undetected, but will also be a huge game changer for the incident response team. 
